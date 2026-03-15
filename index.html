@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Old-School Website</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #008080;
+      color: #000000;
+      font-family: "Times New Roman", Times, serif;
+      background-image:
+        radial-gradient(circle, rgba(255,255,255,0.15) 1px, transparent 1px);
+      background-size: 12px 12px;
+    }
+
+    .page {
+      width: min(760px, 92vw);
+      margin: 20px auto;
+      background: #c0c0c0;
+      border: 4px ridge #ffffff;
+      box-shadow: 8px 8px 0 #000080;
+    }
+
+    .topbar {
+      background: linear-gradient(to right, #000080, #1084d0);
+      color: white;
+      padding: 8px 12px;
+      font-weight: bold;
+      font-size: 18px;
+      border-bottom: 3px solid #ffffff;
+      text-align: center;
+      letter-spacing: 1px;
+    }
+
+    .marquee {
+      background: yellow;
+      color: red;
+      font-weight: bold;
+      padding: 6px;
+      border-top: 2px dashed red;
+      border-bottom: 2px dashed red;
+      text-align: center;
+    }
+
+    .content {
+      padding: 18px;
+      text-align: center;
+    }
+
+    .construction {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000080;
+      background: #ffffcc;
+      border: 2px dotted #000;
+      padding: 8px;
+      margin-bottom: 16px;
+    }
+
+    .heading-box,
+    .text-box {
+      background: white;
+      border: 3px inset #999;
+      margin: 14px auto;
+      padding: 14px;
+      width: 85%;
+    }
+
+    .heading-box {
+      font-size: 32px;
+      font-weight: bold;
+      color: #800000;
+      text-shadow: 2px 2px 0 #ffcc00;
+    }
+
+    .text-box {
+      text-align: left;
+      font-size: 18px;
+      line-height: 1.5;
+    }
+
+    .divider {
+      margin: 18px 0;
+      font-size: 24px;
+      color: #ff00ff;
+      letter-spacing: 4px;
+    }
+
+    .nav {
+      background: #000080;
+      padding: 10px;
+      text-align: center;
+      border-top: 3px solid white;
+      border-bottom: 3px solid white;
+    }
+
+    .nav a {
+      color: #ffff00;
+      text-decoration: underline;
+      font-weight: bold;
+      margin: 6px 10px;
+      font-size: 18px;
+      display: inline-block;
+    }
+
+    .counter-box {
+      margin: 20px auto 10px;
+      display: inline-block;
+      background: black;
+      color: #00ff00;
+      border: 3px outset #666;
+      padding: 10px 16px;
+      font-family: "Courier New", Courier, monospace;
+      font-size: 20px;
+      letter-spacing: 3px;
+    }
+
+    .footer {
+      background: #c0c0c0;
+      text-align: center;
+      padding: 16px;
+      font-size: 14px;
+      border-top: 3px groove white;
+    }
+
+    .blink {
+      animation: blink 1s steps(2, start) infinite;
+      color: red;
+      font-weight: bold;
+    }
+
+    @keyframes blink {
+      to {
+        visibility: hidden;
+      }
+    }
+
+    .small {
+      font-size: 13px;
+    }
+  
+
+    /* Mobile scaling (still keeps the retro vibe) */
+    @media (max-width: 600px) {
+      .heading-box {
+        font-size: 24px;
+      }
+
+      .text-box {
+        font-size: 16px;
+      }
+
+      .nav a {
+        font-size: 16px;
+        margin: 6px;
+      }
+
+      .counter-box {
+        font-size: 16px;
+        letter-spacing: 2px;
+      }
+
+      .content {
+        padding: 14px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="page">
+    <div class="topbar">WELCOME TO MY HOMEPAGE</div>
+
+    <div class="marquee">
+      <marquee behavior="scroll" direction="left" scrollamount="6">
+        ★ Welcome to my awesome website ★ Best viewed on a CRT monitor ★ Under construction forever ★
+      </marquee>
+    </div>
+
+    <div class="nav">
+      <a href="#">Home</a>
+      <a href="#">About</a>
+      <a href="#">Cool Stuff</a>
+      <a href="#">Guestbook</a>
+    </div>
+
+    <div class="content">
+      <div class="construction">
+        🚧 THIS PAGE IS UNDER CONSTRUCTION 🚧
+      </div>
+
+      <div class="heading-box">Homepage of jack.scot</div>
+
+      <div class="divider">✦ ✦ ✦ ✦ ✦</div>
+
+      <div class="text-box">
+        <p><b>Welcome to my extremely serious professional homepage.</b></p>
+
+        <p>This page is also my small collection of <b>useful Intune resources</b> that I frequently use when troubleshooting, learning, or pretending I remembered something without Googling it.</p>
+
+        <hr>
+
+        <h3>Useful Intune Links</h3>
+
+        <p>
+        <b>Call4Cloud</b><br>
+        One of the best technical blogs for Intune deep dives, Autopilot behaviour, and troubleshooting madness.<br>
+        <a href="https://call4cloud.nl" target="_blank">https://call4cloud.nl</a>
+        </p>
+
+        <p>
+        <b>Rudy Ooms</b><br>
+        Legendary scripts, tools, and deep Intune knowledge. If something weird is happening in Intune, there's a good chance Rudy already wrote about it.<br>
+        <a href="https://github.com/Call4cloud" target="_blank">https://github.com/Call4cloud</a>
+        </p>
+
+        <p>
+        <b>Microsoft Intune Documentation</b><br>
+        The official docs (which are sometimes correct).<br>
+        <a href="https://learn.microsoft.com/mem/intune/" target="_blank">https://learn.microsoft.com/mem/intune/</a>
+        </p>
+
+        <hr>
+
+        <h3>Scripts I Like</h3>
+
+        <p>
+        I'll slowly add scripts here that help with:
+        </p>
+
+        <ul>
+        <li>Autopilot troubleshooting</li>
+        <li>Intune remediation scripts</li>
+        <li>Device cleanup</li>
+        <li>General "why is this broken" diagnostics</li>
+        </ul>
+
+        <p>
+        (Eventually this might turn into a small GitHub repo once I stop breaking things.)
+        </p>
+
+        <hr>
+
+      </div>
+
+      <div class="counter-box">
+        Visitors: <span id="counter">000123</span>
+      </div>
+
+      <p class="blink">NEW! NEW! NEW!</p>
+      <p class="small">Best viewed with Netscape Navigator at 800x600</p>
+    </div>
+
+    <div class="footer">
+      © 1998 Jack Scott • Webmaster: hello@jack.scot
+    </div>
+  </div>
+
+  <script>
+    // Fake old-school view counter that increments locally in the browser
+    const counterEl = document.getElementById('counter');
+    let count = Number(localStorage.getItem('oldSchoolCounter') || 123);
+    count += 1;
+    localStorage.setItem('oldSchoolCounter', count);
+    counterEl.textContent = String(count).padStart(6, '0');
+  </script>
+</body>
+</html>
